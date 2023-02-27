@@ -1,0 +1,179 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: Tajawal;
+    height: 100vh;
+    justify-content: center;
+    /* align-items: center; */
+    display: flex;
+
+    /* background-repeat: no-repeat; */
+    margin: 0;
+}
+
+
+.logo {
+    /* margin-top: 10rem; */
+    font-size: 3rem;
+    text-align: center;
+    flex-grow: 1;
+    /* height: 15%; */
+    background-image: url(https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 60vw;
+    color: white;
+}
+
+.odinText {
+    padding: 1rem;
+    font-family: Oswald;
+    background-color: rgba(0, 0, 0, .4);
+    /* height: 0%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+
+
+}
+
+.odinText img {
+    width: 6rem;
+    height: 6rem;
+
+
+}
+
+
+
+
+.container {
+    width: 100%;
+    height: 100%;
+
+    /* height: 100vh; */
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+} */
+header,
+footer,
+main {
+    padding: 2rem;
+}
+
+
+
+main {
+    background-color: white;
+    height: 350px;
+    box-shadow: 0px 3px 8px lightgray;
+    border-radius: .2rem;
+}
+
+main h2 {
+    margin: 0;
+
+}
+
+.fieldsets {
+    display: flex;
+    flex-grow: 1;
+
+
+}
+
+fieldset {
+    padding-left: 0px;
+    padding-bottom: 0px;
+    border: none;
+    /* flex-grow: 1; */
+    display: flex;
+    flex-direction: column;
+
+}
+
+label {
+    font-size: .8rem;
+    font-weight: 800;
+}
+
+input {
+    width: 250px;
+    height: 30px;
+    border: 1px solid #E5E7EB;
+    border-radius: .3rem;
+}
+
+
+input:focus {
+    outline: 0;
+    border: 1px solid blue;
+
+}
+
+.error {
+    border: 2px solid red
+}
+
+.errorMsg {
+    margin: 0;
+    display: none;
+    color: red;
+    font-size: .7rem;
+}
+
+
+fieldset div {
+    padding-top: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    margin: 0px;
+}
+
+
+
+
+
+
+
+.submitButton {
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    color: white;
+    background-color: #596D48;
+    width: 200px;
+    font-family: Roboto Mono;
+    font-size: 1rem;
+}
+
+.logIn {
+    text-decoration: none;
+    color: #4f772d;
+}
+
+.invalid {
+    color: red;
+    height: 24px;
+    width: 34px;
+}

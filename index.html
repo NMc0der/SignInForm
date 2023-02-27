@@ -6,11 +6,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Roboto+Mono&family=Tajawal&display=swap"
+        rel="stylesheet">
     <title>Sign-Up Form</title>
 </head>
 
 <body>
+    <div class="logo">
+        <h2 class="odinText"> <img
+                src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
+                alt="">ODIN</h2>
+    </div>
+    <div class="container">
+        <form action="">
+            <header>
+                <h2>This is not a real online service! You know you need something like this in your life to help you
+                    realize your deepest dreams. Sign up now to get started.</h2>
+                <h2>You know you want to.</h2>
+            </header>
+            <main>
+                <h2>Let's Do this!</h2>
+                <div class="fieldsets">
+                    <fieldset>
+                        <div class="firstDiv"><label for="first">FIRST NAME</label>
+                            <input type="text" name="first" id="first" required>
+                        </div>
 
+                        <div class="emailDiv">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="e-mail" id="email" required>
+                        </div>
+
+                        <div class="passwordDiv">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password" required>
+
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset>
+
+                        <div class="lastDiv">
+                            <label for="last">LAST NAME</label>
+                            <input type="text" name="last" id="last" required>
+                        </div>
+
+                        <div class="phoneDiv">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" name="phone" id="phone" pattern="[1-9]\d{2}-\d{3}-\d{4}" required>
+                        </div>
+
+                        <div class="confirmDiv">
+                            <label for="confirmPass">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirmPass" id="confirmPass" required>
+                        </div>
+                    </fieldset>
+                </div>
+                <p class="errorMsg">*Passwords do not match</p>
+
+            </main>
+            <footer class="create">
+                <button class="submitButton" type="submit">Create Account</button>
+                <p>Already have an account? <a class="logIn" href="log">Log in</a></p>
+            </footer>
+
+        </form>
+
+    </div>
+
+
+    <script src="app.js"></script>
 </body>
 
 </html>
